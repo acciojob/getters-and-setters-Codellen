@@ -2,30 +2,32 @@
 class Person {
 	constructor(name,age)
 	{
-		this.Age = ""
+		this.Age = age
 		this.Name = getName;
 	}
 	get getName()
 	{
 		this.Name = name;
 	}
-	set setterage(age)
+	set setterAge(age)
 	{
-		this.Age = age;
+		this.Age = "25";
 	}
 }
 
 class Student extends Person {
+	super(name)
 	study(){
-		super(name)
-		console.log(this.name+" is studying")
+		
+		console.log(`${Student.name} is studying`)
 	}
 }
 
 class Teacher extends Person {
+	super(name)
 	teach(){
-		super(name)
-		console.log(this.name+" is teaching")
+		
+		console.log(`${Teacher.name} is studying`)
 	}
 }
 var user = new Person("John","25")
